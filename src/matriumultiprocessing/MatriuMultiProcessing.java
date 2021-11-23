@@ -31,7 +31,7 @@ public class MatriuMultiProcessing {
         //START CALCULATION
         ArrayList<Thread> pUnitThreads = new ArrayList<Thread>();
         
-        long startTime = System.nanoTime();
+//        long startTime = System.nanoTime();
         
         processingUnits.forEach((pUnit) -> {
             Thread pUnitThread = new Thread(pUnit);
@@ -41,7 +41,7 @@ public class MatriuMultiProcessing {
         });
 
         
-        //printAandB();
+        printAandB();
                
         //DISPLAY ON FINISH
         Thread solutionPrinter = new Thread(new SolutionPrinter(pUnitThreads, A, B, C));
@@ -53,12 +53,12 @@ public class MatriuMultiProcessing {
             System.out.println(e);
         }
         
-        long endTime = System.nanoTime();
+//        long endTime = System.nanoTime();
         
-        System.out.println("");
-        System.out.println("Start time \t" + startTime);
-        System.out.println("End time \t" + endTime);
-        System.out.println("Execution time \t" + (endTime - startTime));
+//        System.out.println("");
+//        System.out.println("Start time \t" + startTime);
+//        System.out.println("End time \t" + endTime);
+//        System.out.println("Execution time \t" + (endTime - startTime));
         
     }
     

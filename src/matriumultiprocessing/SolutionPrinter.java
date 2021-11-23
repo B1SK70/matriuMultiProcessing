@@ -22,6 +22,6 @@ public class SolutionPrinter implements Runnable{
            }
         });
         System.out.println("ELEMENT RESULTANT");
-        //C.printArray();
+        C.printArray();
     }
 }
